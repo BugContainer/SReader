@@ -2,6 +2,7 @@ package com.bugli.sreader.data
 
 import com.bugli.sreader.data.db.BookDao
 import com.bugli.sreader.data.model.book.Novel
+import com.bugli.sreader.data.model.book.SelfNovel
 import com.bugli.sreader.data.network.api.BookNetwork
 import org.litepal.LitePal
 
@@ -13,7 +14,7 @@ class BookRepository private constructor(
 
     fun isAnyNovelsInSelf(): Boolean {
         //判断书架中是否有书籍 有则显示书架页面 无则显示每日推荐（即搜索页面）
-        return LitePal.findAll(Novel::class.java).isNotEmpty()
+        return LitePal.findAll(SelfNovel::class.java).isNotEmpty()
     }
 
 
