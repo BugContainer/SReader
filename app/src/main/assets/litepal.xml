@@ -1,0 +1,9 @@
+<litepal>
+    <dbname value="s_reader" />
+    <version value="1" />
+    <list>
+        <mapping class="com.bugli.sreader.data.model.book.Novel" />
+        <mapping class="com.bugli.sreader.data.model.user.User" />
+        <mapping class="com.bugli.sreader.data.model.book.SelfNovel" />
+    </list>
+</litepal>
