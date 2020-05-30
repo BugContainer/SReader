@@ -1,5 +1,8 @@
 package com.bugli.sreader.data
 
+import android.os.Build
+import android.view.View
+import android.view.WindowManager
 import com.bugli.sreader.data.db.BookDao
 import com.bugli.sreader.data.model.book.Novel
 import com.bugli.sreader.data.model.book.SelfNovel
@@ -38,4 +41,5 @@ class BookRepository private constructor(
         }
 
     }
+
 }
